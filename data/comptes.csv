@@ -1,0 +1,4 @@
+name,password,email,failed_login_attemps,logged_in,role
+admin,"12345",admin@email.com,0,False,admin
+movies,"12345",samira@email.com,0,False,user
+

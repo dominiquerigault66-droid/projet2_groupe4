@@ -1,0 +1,30 @@
+/* couleur de fond  */
+.stApp {
+    background-color: #FFFFFF; /* Blanc */
+}
+
+/* le texte principal en Noir, je rajouterai la police laterz */
+h1, h2, h3, p, span {
+    color: #000000 !important;
+}
+
+/* personnalisation des blocs de reco (Cartes) */
+.stAlert {
+    background-color: #FFD1DC; 
+    border: 1px solid #FF4D4D; /
+    border-radius: 10px;
+}
+
+/* personnalisation des boutons */
+.stButton>button {
+    background-color: #FF4D4D; 
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+
+/* devient rose au survol/hover */
+.stButton>button:hover {
+    background-color: #FFD1DC; 
+    color: #FF4D4D;
+}
