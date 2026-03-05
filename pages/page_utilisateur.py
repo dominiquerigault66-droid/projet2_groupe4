@@ -1,8 +1,24 @@
 import streamlit as st
 import pandas as pd 
 import os
+from streamlit_option_menu import option_menu
+
 
 # pr charger le CSS
+
+# ========== sidebar navigation ============
+with st.sidebar:
+    st.write(f"Bienvenue {st.session_state.get('name','')} 🎬")
+    sel = option_menu(menu_title="Menu",
+                      options=["Accueil","Catalogue","Profil"],
+                      icons=["house","collection","person"],
+                      default_index=2)
+    if sel == "Accueil":
+        st.switch_page("app.py")
+    elif sel == "Catalogue":
+        st.switch_page("pages/catalogue.py")
+    # Profil selected: stay here
+
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)

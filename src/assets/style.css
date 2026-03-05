@@ -1,11 +1,31 @@
-/* couleur de fond  */
+@import url('https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@400;700&display=swap');
+
+/* bg color  */
 .stApp {
-    background-color: #FFFFFF; /* Blanc */
+    background-color: #0e1117; /* default Streamlit color */
+    font-family: 'LINE Seed JP', sans-serif;
 }
 
-/* le texte principal en Noir, je rajouterai la police laterz */
+/* failed attempt to hide the default Streamlit header, 
+realised it was useless and only needed the change the bg color
+.stApp > header {
+    visibility: hidden;
+} */
+
+/* masquer la navigation par défaut de la sidebar */
+[data-testid="stSidebarNav"] {
+    display: none;
+}
+
+/* supprimer les bordures et séparateurs dans la sidebar */
+.stSidebar {
+    border: none !important;
+    border-right: none !important;
+}
+
+/* le texte principal en Blanc, je rajouterai la police laterz */
 h1, h2, h3, p, span {
-    color: #000000 !important;
+    color: #FFFFFF !important;
 }
 
 /* personnalisation des blocs de reco (Cartes) */
