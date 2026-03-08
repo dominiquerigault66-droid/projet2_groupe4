@@ -121,7 +121,7 @@ if st.button("Afficher les résultats"):
 # ===============================
 
 base_url = "http://image.tmdb.org/t/p/"
-size = "w45"
+size = "w154"
 
 if st.session_state.results is not None:
 
